@@ -1,0 +1,20 @@
+<h1>Pegando os dados de Turmas</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>id</th>
+      <th>nome</th>
+      <th>descricao</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (turma of turma$ | async; track turma.id) {
+      <tr>
+        <td>{{ turma.id }}</td>
+        <td>{{ turma.nome }}</td>
+        <td>{{ turma.descricao }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
