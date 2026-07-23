@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable, inject } from '@angular/core';
-import { Turma } from '../models/Turma';
+import { TurmaModel } from '../models/TurmaModel';
 import { environment } from '../../environments/environment';
 
 @Injectable({
@@ -11,6 +11,6 @@ export class TurmaService {
   private readonly apiUrl = `${environment.ApiUrl}/Turma`;
 
   GetTurmas() {
-    return this.http.get<Turma[]>(this.apiUrl);
+    return this.http.get<TurmaModel[]>(this.apiUrl);
   }
 }

@@ -1,4 +1,4 @@
-export interface Turma {
+export interface TurmaModel {
   id: number;
   nome: string;
   descricao: string;

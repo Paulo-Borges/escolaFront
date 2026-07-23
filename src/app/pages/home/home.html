@@ -1,24 +1,6 @@
 <main>
-  <h1 class="flex justify-center py-6">Pegando os dados de Turmas</h1>
-  <hr />
-  <table class="">
-    <thead>
-      <tr class="gap-4 bg-gray-800">
-        <th class="text-start align-start justify-start">id</th>
-        <th class="text-start align-start justify-start">nome</th>
-        <th class="text-start align-start justify-start">descricao</th>
-      </tr>
-    </thead>
-    <tbody>
-      @for (turma of turma$ | async; track turma.id) {
-        <tr class="border-t-2">
-          <td>{{ turma.id }}</td>
-          <td>{{ turma.nome }}</td>
-          <td>{{ turma.descricao }}</td>
-        </tr>
-      }
-    </tbody>
-  </table>
+  <app-turma></app-turma>
+
   <hr />
   <h1 class="flex justify-center py-6">Pegando os dados de Cursos</h1>
   <hr />
