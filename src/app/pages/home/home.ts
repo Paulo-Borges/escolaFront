@@ -3,10 +3,11 @@ import { Matricula } from '../../componets/matricula/matricula';
 import { Turma } from '../../componets/turma/turma';
 import { Curso } from '../../componets/curso/curso';
 import { Nota } from '../../componets/nota/nota';
+import { Usuario } from '../../componets/usuario/usuario';
 
 @Component({
   selector: 'app-home',
-  imports: [Matricula, Turma, Curso, Nota],
+  imports: [Matricula, Turma, Curso, Nota, Usuario],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })

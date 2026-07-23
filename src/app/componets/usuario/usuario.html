@@ -1,0 +1,21 @@
+<h1 class="flex justify-center py-6">Pegando os dados de Usuarios</h1>
+<hr />
+<table class="">
+  <thead>
+    <tr class="gap-4 bg-gray-800">
+      <th class="text-start align-start justify-start">id</th>
+      <th class="text-start align-start justify-start">nome</th>
+      <th class="text-start align-start justify-start">email</th>
+      <th class="text-start align-start justify-start">senha</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (usuario of usuario$ | async; track usuario.id) {
+      <tr class="border-t-2">
+        <td>{{ usuario.id }}</td>
+        <td>{{ usuario.email }}</td>
+        <td>{{ usuario.senha }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
