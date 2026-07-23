@@ -1,0 +1,21 @@
+<hr />
+<h1 class="flex justify-center py-6">Pegando os dados de Matricula</h1>
+<hr />
+<table class="">
+  <thead>
+    <tr class="gap-4 bg-gray-800">
+      <th class="text-start align-start justify-start">id</th>
+      <th class="text-start align-start justify-start">alunoId</th>
+      <th class="text-start align-start justify-start">turmaId</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (matricula of matricula$ | async; track matricula.id) {
+      <tr class="border-t-2">
+        <td>{{ matricula.id }}</td>
+        <td>{{ matricula.alunoId }}</td>
+        <td>{{ matricula.turmaId }}</td>
+      </tr>
+    }
+  </tbody>
+</table>

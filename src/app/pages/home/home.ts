@@ -5,10 +5,11 @@ import { Turma } from '../../models/Turma';
 import { AsyncPipe } from '@angular/common';
 import { CursoService } from '../../services/curso-service';
 import { Curso } from '../../models/Curso';
+import { Matricula } from '../../componets/matricula/matricula';
 
 @Component({
   selector: 'app-home',
-  imports: [AsyncPipe],
+  imports: [AsyncPipe, Matricula],
   templateUrl: './home.html',
   styleUrl: './home.css',
 })
