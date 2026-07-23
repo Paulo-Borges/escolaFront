@@ -1,5 +1,5 @@
 export interface MatriculaModel {
-  id: number;
-  alunoId: number;
+  usuarioId: number;
   turmaId: number;
+  data: Date;
 }

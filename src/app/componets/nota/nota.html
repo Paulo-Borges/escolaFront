@@ -1,1 +1,19 @@
-<p>nota works!</p>
+<hr />
+<h1 class="flex justify-center py-6">Pegando os dados de Notas</h1>
+<hr />
+<table class="">
+  <thead>
+    <tr class="gap-4 bg-gray-800">
+      <th class="text-start align-start justify-start">matriculaId</th>
+      <th class="text-start align-start justify-start">valorNota</th>
+    </tr>
+  </thead>
+  <tbody>
+    @for (nota of nota$ | async; track nota.matriculaId) {
+      <tr class="border-t-2">
+        <td>{{ nota.matriculaId }}</td>
+        <td>{{ nota.valorNota }}</td>
+      </tr>
+    }
+  </tbody>
+</table>
